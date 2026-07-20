@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login / Register | Rotary School Uran</title>
+<meta name="description" content="Log in or register for the Rotary School Uran parent and student portal.">
+<link rel="icon" href="assets/images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="preloader"><svg viewBox="0 0 100 100" class="loader-gear" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loading">
+<g fill="none" stroke="#D8A63D" stroke-width="6">
+<circle cx="50" cy="50" r="30"/>
+<g stroke-width="6">
+<line x1="50" y1="6" x2="50" y2="18"/><line x1="50" y1="82" x2="50" y2="94"/>
+<line x1="6" y1="50" x2="18" y2="50"/><line x1="82" y1="50" x2="94" y2="50"/>
+<line x1="18" y1="18" x2="26" y2="26"/><line x1="74" y1="74" x2="82" y2="82"/>
+<line x1="82" y1="18" x2="74" y2="26"/><line x1="26" y1="74" x2="18" y2="82"/>
+</g>
+</g>
+<circle cx="50" cy="50" r="14" fill="#12204A"/>
+</svg></div>
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-links">
+      <span><a href="mailto:info@rotaryschooluran.com">&#9993; info@rotaryschooluran.com</a></span>
+      <span><a href="tel:9833181165">&#9742; 9833181165 / 8291523003</a></span>
+    </div>
+    <div class="topbar-social">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Instagram">in</a>
+      <a href="https://www.youtube.com/watch?v=Fd2f0Dghp6I" aria-label="YouTube">yt</a>
+      <a href="#" aria-label="LinkedIn">li</a>
+    </div>
+  </div>
+</div>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.jpg" alt="Rotary School Uran logo">
+      <span class="brand-text"><strong>Rotary School Uran</strong><span>Learn &middot; Serve &middot; Succeed</span></span>
+    </a>
+    <nav>
+      <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="directors.html">Directors</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Updates <span class="chev">&#9662;</span></a>
+              <div class="dropdown"><a href="events.html">Events</a><a href="news.html">News</a></div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="admissions.html" class="btn btn-primary btn-sm">Apply for Admission</a>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-overlay">
+  <div class="mobile-panel">
+    <div class="mobile-panel-head">
+      <span class="brand-text" style="color:#fff"><strong style="color:#fff">Rotary School Uran</strong><span style="color:var(--gold-300)">Learn &middot; Serve &middot; Succeed</span></span>
+      <button class="mobile-close" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="mobile-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="directors.html">Directors</a>
+          <a href="gallery.html">Gallery</a>
+          <div><a href="events.html" class="mobile-sub-toggle" onclick="return false;">Updates <span class="chev">&#9662;</span></a>
+            <div class="mobile-sub"><a href="events.html">Events</a><a href="news.html">News</a></div></div>
+          <a href="contact.html">Contact</a>
+    </div>
+    <div class="mobile-panel-foot">
+      <a href="admissions.html" class="btn btn-primary btn-block">Apply for Admission</a>
+      <a href="donation.html" class="btn btn-outline btn-block">Donate Now</a>
+    </div>
+  </div>
+</div>
+<main>
+<section class="page-hero">
+  <div class="container with-media">
+    <div>
+      <div class="eyebrow">Parent &amp; student portal</div>
+      <h1>Login or create an account.</h1>
+      <p>Access admission status, fee updates, circulars, and results once your account is set up by the school office.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Login</span></div>
+    </div>
+    <div class="page-hero-media reveal-scale in"><img src="assets/images/events/annualday-4.jpg" alt="Login - Rotary School Uran"></div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="auth-wrap reveal">
+      <div class="form-card">
+        <div class="auth-tabs">
+          <button type="button" class="active" data-tab="login">Log in</button>
+          <button type="button" data-tab="register">Register</button>
+        </div>
+
+        <div class="auth-panel active" data-panel="login">
+          <form data-demo-form>
+            <div class="form-row full">
+              <div class="field"><label>Email or mobile number</label><input type="text" required placeholder="you@example.com"></div>
+            </div>
+            <div class="form-row full">
+              <div class="field"><label>Password</label><input type="password" required placeholder="Enter your password"></div>
+            </div>
+            <div class="field-check">
+              <input type="checkbox" id="remember"><label for="remember">Remember me</label>
+              <span style="margin-left:auto"><a href="#" style="color:var(--teal-700);font-weight:700">Forgot password?</a></span>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Log in</button>
+            <p class="form-note" style="display:none;margin-top:14px;color:var(--teal-700);font-weight:600"></p>
+          </form>
+          <p class="auth-foot">Don&rsquo;t have an account? <a href="#" data-switch-auth="register">Register here</a></p>
+        </div>
+
+        <div class="auth-panel" data-panel="register">
+          <form data-demo-form>
+            <div class="form-row">
+              <div class="field"><label>Parent name</label><input type="text" required placeholder="Full name"></div>
+              <div class="field"><label>Student name</label><input type="text" required placeholder="Child&rsquo;s full name"></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label>Mobile number</label><input type="tel" required placeholder="10-digit mobile number"></div>
+              <div class="field"><label>Class / grade</label>
+                <select required>
+                  <option value="">Select class</option>
+                  <option>KG1 / KG2</option>
+                  <option>Std 1&ndash;4 (Primary)</option>
+                  <option>Std 5&ndash;10 (High School)</option>
+                  <option>Std 11&ndash;12 (Jr. College)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row full">
+              <div class="field"><label>Email address</label><input type="email" required placeholder="you@example.com"></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label>Create password</label><input type="password" required placeholder="Choose a password"></div>
+              <div class="field"><label>Confirm password</label><input type="password" required placeholder="Re-enter password"></div>
+            </div>
+            <div class="field-check">
+              <input type="checkbox" required id="terms"><label for="terms">I agree to the school&rsquo;s terms &amp; privacy policy</label>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Create account</button>
+            <p class="form-note" style="display:none;margin-top:14px;color:var(--teal-700);font-weight:600"></p>
+          </form>
+          <p class="auth-foot">Already registered? <a href="#" data-switch-auth="login">Log in instead</a></p>
+        </div>
+      </div>
+      <p class="text-center" style="margin-top:18px;color:var(--ink-500);font-size:13px">This portal is a Phase 1 preview. Account creation and login will connect to the school&rsquo;s secure database in Phase 2.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-col footer-brand-col">
+        <div class="footer-brand">
+          <img src="assets/images/logo.jpg" alt="Rotary School Uran logo">
+          <strong>Rotary School Uran</strong>
+        </div>
+        <p style="color:rgba(255,255,255,.7)">Inspiring excellence. Building character. Creating future leaders.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="https://www.youtube.com/watch?v=Fd2f0Dghp6I" aria-label="YouTube">yt</a>
+          <a href="#" aria-label="LinkedIn">li</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="facilities.html">Facilities &amp; technology</a></li>
+          <li><a href="labs-library.html">Labs &amp; library</a></li>
+          <li><a href="directors.html">Directors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="donation.html">Donation</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="assets/docs/RULES%20AND%20REGULATIONS.pdf" download>Rules &amp; Regulations (PDF)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reach us</h4>
+        <ul>
+          <li>Rotary School Uran, Bori, Uran, Navi Mumbai, Maharashtra 400702</li>
+          <li><a href="tel:9833181165">9833181165</a></li>
+          <li><a href="tel:8291523003">8291523003</a></li>
+          <li><a href="mailto:info@rotaryschooluran.com">info@rotaryschooluran.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Rotary Education Society. All rights reserved.</span>
+      <span>Designed by <a href="#">Smart Bharthi Technology Uran</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<div class="lightbox"><button class="lightbox-close" aria-label="Close">&times;</button><img src="" alt="Gallery preview"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

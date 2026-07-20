@@ -1,0 +1,16 @@
+# XAMPP uploads
+uploads/news/*
+
+# Environment files
+.env
+
+# Database temporary files
+*.sql~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
